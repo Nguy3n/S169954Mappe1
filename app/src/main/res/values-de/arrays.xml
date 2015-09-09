@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="wordArray">
+        <item>marmor</item>
+        <item>bär</item>
+        <item>weihnachten socken</item>
+        <item>apfel</item>
+        <item>nachttisch</item>
+        <item>rollerbladen</item>
+        <item>xylophon</item>
+        <item>beeren</item>
+        <item>schneemann</item>
+        <item>kajak</item>
+        <item>geburtstagsfeier</item>
+        <item>disneyworld</item>
+        <item>gorilla</item>
+        <item>zoo</item>
+        <item>garnelensandwich</item>
+        <item>flughafen</item>
+        <item>erfolg tart</item>
+        <item>sternen</item>
+        <item>sandsturm</item>
+        <item>raum</item>
+        <item>spannung</item>
+        <item>traumberuf</item>
+        <item>clock</item>
+        <item>liseberg</item>
+        <item>radiergummi</item>
+        <item>ernährung</item>
+        <item>hurtigruten</item>
+        <item>verkleidung trend</item>
+        <item>rucksack</item>
+        <item>Anwendungsprogrammierschnittstelle</item>
+    </array>
+</resources>
