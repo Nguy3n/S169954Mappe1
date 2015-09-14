@@ -1,5 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- From: file:/Users/toeffen/Documents/H2015/Apputvikling/S169954/app/src/main/res/values-nb/arrays.xml -->
+    <eat-comment/>
+    <array name="wordArray">
+        <item>klinkekule</item>
+        <item>bamse</item>
+        <item>julesokker</item>
+        <item>eple</item>
+        <item>nattbord</item>
+        <item>rulleskøyter</item>
+        <item>xylofon</item>
+        <item>skogsbær</item>
+        <item>snømann</item>
+        <item>kajakk</item>
+        <item>bursdagsselskap</item>
+        <item>disneyworld</item>
+        <item>gorilla</item>
+        <item>zoo</item>
+        <item>rekesmørbrød</item>
+        <item>flyplass</item>
+        <item>suksessterte</item>
+        <item>stjernehimmel</item>
+        <item>sandstorm</item>
+        <item>verdensrommet</item>
+        <item>spenning</item>
+        <item>drømmejobb</item>
+        <item>boligblokk</item>
+        <item>liseberg</item>
+        <item>viskelær</item>
+        <item>kosthold</item>
+        <item>hurtigruten</item>
+        <item>kåpetrend</item>
+        <item>tursekk</item>
+        <item>applikasjonsprogrammeringsgrensesnitt</item>
+    </array>
     <!-- From: file:/Users/toeffen/Documents/H2015/Apputvikling/S169954/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-nb/values-nb.xml -->
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Gå til startsiden"</string>

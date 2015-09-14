@@ -1,12 +1,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_marginTop="3dp"
     android:layout_marginBottom="3dp"
     android:layout_marginLeft="8dp"
     android:layout_marginRight="8dp"
     android:orientation="vertical"
+    android:layout_gravity="bottom"
     tools:context=".MainActivity">
 
     <TextView
@@ -18,13 +19,14 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:src="@drawable/image_land"/>
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
         android:orientation="horizontal">
 
 
@@ -83,13 +85,13 @@
             android:layout_height="35dp"
             android:text="Å"/>
 
-    </LinearLayout>
+    </TableRow>
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
         android:orientation="horizontal">
 
         <Button
@@ -147,49 +149,56 @@
             android:layout_height="35dp"
             android:text="Æ"/>
 
-    </LinearLayout>
+    </TableRow>
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
         android:orientation="horizontal">
 
         <Button
             android:layout_width="52dp"
             android:layout_height="35dp"
+            android:layout_weight="1"
             android:text="Z"/>
 
         <Button
             android:layout_width="52dp"
             android:layout_height="35dp"
+            android:layout_weight="1"
             android:text="X"/>
 
         <Button
             android:layout_width="52dp"
             android:layout_height="35dp"
+            android:layout_weight="1"
             android:text="C"/>
 
         <Button
             android:layout_width="52dp"
             android:layout_height="35dp"
+            android:layout_weight="1"
             android:text="V"/>
 
         <Button
             android:layout_width="52dp"
             android:layout_height="35dp"
+            android:layout_weight="1"
             android:text="B"/>
 
         <Button
             android:layout_width="52dp"
             android:layout_height="35dp"
+            android:layout_weight="1"
             android:text="N"/>
 
         <Button
             android:layout_width="52dp"
             android:layout_height="35dp"
+            android:layout_weight="1"
             android:text="M"/>
 
-    </LinearLayout>
+    </TableRow>
 </LinearLayout>

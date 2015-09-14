@@ -1,26 +1,31 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     android:layout_marginTop="10dp"
     android:layout_marginBottom="10dp"
     android:layout_marginLeft="5dp"
     android:layout_marginRight="5dp"
+    android:layout_gravity="bottom"
     tools:context=".MainActivity">
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hangman-spill"/>
 
-
-
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:src="@drawable/image"/>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="bottom"
         android:orientation="horizontal">
 
         <Button
@@ -78,13 +83,13 @@
             android:layout_height="wrap_content"
             android:text="Å"/>
 
-    </LinearLayout>
+    </TableRow>
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="bottom"
         android:orientation="horizontal">
 
         <Button
@@ -142,13 +147,13 @@
             android:layout_height="wrap_content"
             android:text="Æ"/>
 
-    </LinearLayout>
+    </TableRow>
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="bottom"
         android:orientation="horizontal">
 
         <Button
@@ -159,34 +164,38 @@
         <Button
             android:layout_width="34dp"
             android:layout_height="wrap_content"
-            android:text="X"/>
+            android:text="X"
+            android:layout_weight="1" />
 
         <Button
             android:layout_width="34dp"
             android:layout_height="wrap_content"
-            android:text="C"/>
+            android:text="C"
+            android:layout_weight="1" />
 
         <Button
             android:layout_width="34dp"
             android:layout_height="wrap_content"
-            android:text="V"/>
+            android:text="V"
+            android:layout_weight="1" />
 
         <Button
             android:layout_width="34dp"
             android:layout_height="wrap_content"
-            android:text="B"/>
+            android:text="B"
+            android:layout_weight="1" />
 
         <Button
             android:layout_width="34dp"
             android:layout_height="wrap_content"
-            android:text="N"/>
+            android:text="N"
+            android:layout_weight="1" />
 
         <Button
             android:layout_width="34dp"
             android:layout_height="wrap_content"
-            android:text="M"/>
-
-    </LinearLayout>
-
+            android:text="M"
+            android:layout_weight="1" />
+    </TableRow>
 </LinearLayout>
-<!-- From: file:/Users/toeffen/Documents/H2015/Apputvikling/S169954/app/src/main/res/layout/activity_main.xml -->
+<!-- From: file:/Users/toeffen/Documents/H2015/Apputvikling/S169954/app/src/main/res/layout/startspillet.xml -->
