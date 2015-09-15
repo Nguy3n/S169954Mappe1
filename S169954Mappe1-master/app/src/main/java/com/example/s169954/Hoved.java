@@ -15,7 +15,6 @@ public class Hoved extends Activity {
 
     Button reglerKnapp;
     Button spillKnapp;
-    Button spraakKnapp;
     Button avsluttKnapp;
 
     @Override
@@ -52,7 +51,6 @@ public class Hoved extends Activity {
 
         reglerKnapp = (Button) findViewById(R.id.se_regler);
         spillKnapp = (Button) findViewById(R.id.start_spill);
-        spraakKnapp = (Button) findViewById(R.id.endre_spraak);
         avsluttKnapp = (Button) findViewById(R.id.avslutt);
 
         reglerKnapp.setOnClickListener(new View.OnClickListener() {
