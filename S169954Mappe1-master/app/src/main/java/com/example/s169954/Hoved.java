@@ -70,6 +70,16 @@ public class Hoved extends Activity {
                 startActivity(intent);
             }
         });
+
+
+        avsluttKnapp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+                System.exit(0);
+
+            }
+        });
     }
 
 
