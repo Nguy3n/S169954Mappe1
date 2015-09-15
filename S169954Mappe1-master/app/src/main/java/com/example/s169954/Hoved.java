@@ -1,6 +1,7 @@
 package com.example.s169954;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -8,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 import android.widget.Button;
+import android.view.View.OnClickListener;
 
 public class Hoved extends Activity {
 
@@ -20,6 +22,7 @@ public class Hoved extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hovedmeny);
+        addListenerOnButton();
     }
 
     @Override
@@ -46,7 +49,8 @@ public class Hoved extends Activity {
     }
 
     public void addListenerOnButton() {
-        reglerKnapp = (Button) findViewById(R.id.seregler);
+
+        reglerKnapp = (Button) findViewById(R.id.se_regler);
         spillKnapp = (Button) findViewById(R.id.start_spill);
         spraakKnapp = (Button) findViewById(R.id.endre_spraak);
         avsluttKnapp = (Button) findViewById(R.id.avslutt);
@@ -58,5 +62,15 @@ public class Hoved extends Activity {
                 startActivity(intent);
             }
         });
+
+        spillKnapp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),Spillet.class);
+                startActivity(intent);
+            }
+        });
     }
+
+
 }
