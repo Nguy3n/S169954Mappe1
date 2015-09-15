@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="wordArray">
+        <item>marble</item>
+        <item>teddy bear</item>
+        <item>christmas socks</item>
+        <item>apple</item>
+        <item>nightstand</item>
+        <item>rollerblades</item>
+        <item>xylophone</item>
+        <item>berries</item>
+        <item>snowman</item>
+        <item>kayak</item>
+        <item>birthday party</item>
+        <item>disneyworld</item>
+        <item>gorilla</item>
+        <item>zoo</item>
+        <item>prawn sandwich</item>
+        <item>airport</item>
+        <item>success tart</item>
+        <item>starry</item>
+        <item>sandstorm</item>
+        <item>space</item>
+        <item>excitement</item>
+        <item>dream job</item>
+        <item>block</item>
+        <item>liseberg</item>
+        <item>eraser</item>
+        <item>diet</item>
+        <item>hurtigruten</item>
+        <item>coat trend</item>
+        <item>backpack</item>
+        <item>application programming interface</item>
+    </array>
+</resources>
