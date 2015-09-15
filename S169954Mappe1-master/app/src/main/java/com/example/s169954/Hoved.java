@@ -1,12 +1,20 @@
 package com.example.s169954;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
+import android.widget.Button;
 
 public class Hoved extends Activity {
+
+    Button reglerKnapp;
+    Button spillKnapp;
+    Button spraakKnapp;
+    Button avsluttKnapp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,5 +43,20 @@ public class Hoved extends Activity {
                 return super.onOptionsItemSelected(item);
 
         }
+    }
+
+    public void addListenerOnButton() {
+        reglerKnapp = (Button) findViewById(R.id.seregler);
+        spillKnapp = (Button) findViewById(R.id.start_spill);
+        spraakKnapp = (Button) findViewById(R.id.endre_spraak);
+        avsluttKnapp = (Button) findViewById(R.id.avslutt);
+
+        reglerKnapp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),Regler.class);
+                startActivity(intent);
+            }
+        });
     }
 }
