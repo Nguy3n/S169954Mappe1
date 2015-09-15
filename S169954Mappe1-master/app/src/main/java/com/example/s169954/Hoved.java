@@ -1,37 +1,17 @@
 package com.example.s169954;
 
 import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Toast;
-import android.widget.Button;
-import android.view.View.OnClickListener;
 
 public class Hoved extends Activity {
-
-    Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hovedmeny);
-        addListenerOnButton();
-    }
-
-    public void addListenerOnButton() {
-        final Context context = this;
-        button = (Button)findViewById(R.id.seregler);
-        button.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-                Intent intent = new Intent(context, Regler.class);
-                startActivity(intent);
-            }
-        });
     }
 
     @Override
@@ -53,20 +33,7 @@ public class Hoved extends Activity {
 
             default:
                 return super.onOptionsItemSelected(item);
+
         }
     }
-
-    public void onClickListener() {
-        Button seregler = (Button)findViewById(R.id.seregler);
-        seregler.setOnClickListener(new OnClickListener()
-        {
-            public void onClick(View v)
-            {
-                Intent intent = new Intent(Hoved.this, Regler.class);
-                startActivity(intent);
-            }
-        });
-    }
-
-
 }

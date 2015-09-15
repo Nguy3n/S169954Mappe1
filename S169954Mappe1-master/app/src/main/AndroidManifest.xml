@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.s169954"
-    android:versionCode="1"
-    android:versionName="1.0">
-
-    <uses-sdk
-        android:minSdkVersion="15"
-        android:targetSdkVersion="19"/>
+    package="com.example.s169954" >
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name">
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
         <activity
             android:name=".Hoved"
             android:label="@string/app_name" >
@@ -22,23 +17,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Regler"
-            android:label="@string/app_name"
-            android:parentActivityName=".Hoved">
-            <intent-filter>
-                <action android:name="com.example.s169954.Regler"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".Spillet"
-            android:label="@string/app_name"
-            android:parentActivityName=".Hoved">
-            <intent-filter>
-                <action android:name="com.example.s169954.Spillet"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </activity>
     </application>
+
 </manifest>
