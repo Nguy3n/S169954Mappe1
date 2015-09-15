@@ -7,6 +7,10 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.Button;
 import android.view.View.OnClickListener;
@@ -21,7 +25,12 @@ public class Hoved extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hovedmeny);
-        addListenerOnButton();
+
+        setContentView(R.layout.hovedmeny);
+        ArrayAdapter myAdapter = new ArrayAdapter(this,
+                android.R.layout.simple_spinner_dropdown_item, new String[]{"Norsk", "English", "Deutsch"});
+        Spinner mySpinner = (Spinner) findViewById(R.id.spraak_spinner);
+        mySpinner.setAdapter(myAdapter);
     }
 
     @Override
@@ -69,7 +78,6 @@ public class Hoved extends Activity {
             }
         });
 
-
         avsluttKnapp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -79,6 +87,4 @@ public class Hoved extends Activity {
             }
         });
     }
-
-
 }

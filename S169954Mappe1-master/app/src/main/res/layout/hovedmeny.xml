@@ -12,11 +12,10 @@
         android:layout_gravity="center"
         android:src="@drawable/hoved"/>
 
-    <Button
+    <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/se_regler"
-        android:text="@string/se_regler"/>
+        android:id="@+id/spraak_spinner"/>
 
     <Button
         android:layout_width="match_parent"
