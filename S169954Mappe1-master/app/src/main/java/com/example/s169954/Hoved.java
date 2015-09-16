@@ -26,7 +26,6 @@ public class Hoved extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hovedmeny);
 
-        setContentView(R.layout.hovedmeny);
         ArrayAdapter myAdapter = new ArrayAdapter(this,
                 android.R.layout.simple_spinner_dropdown_item, new String[]{"Norsk", "English", "Deutsch"});
         Spinner mySpinner = (Spinner) findViewById(R.id.spraak_spinner);
