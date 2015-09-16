@@ -1749,6 +1749,8 @@ containing a value of this type.
         public static final int app_name=0x7f060013;
         public static final int avslutt_spill=0x7f060014;
         public static final int endre_spraak=0x7f060015;
+        public static final int engelsk=0x7f06001d;
+        public static final int norsk=0x7f06001e;
         public static final int reglene=0x7f060016;
         public static final int se_regler=0x7f060017;
         public static final int spraak=0x7f060018;
@@ -1757,6 +1759,7 @@ containing a value of this type.
         public static final int tips=0x7f06001a;
         public static final int tips_knapp=0x7f06001b;
         public static final int tittel=0x7f06001c;
+        public static final int tysk=0x7f06001f;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f09007a;

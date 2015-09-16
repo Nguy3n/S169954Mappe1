@@ -6,4 +6,5 @@
         android:orderInCategory="100"
         android:showAsAction="always"
         android:title="@string/spraak"/>
+
 </menu><!-- From: file:/Users/toeffen/Documents/H2015/Apputvikling/checkout/S169954Mappe1/S169954Mappe1-master/app/src/main/res/menu/menu_regler.xml -->

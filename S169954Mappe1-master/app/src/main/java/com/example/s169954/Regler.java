@@ -4,14 +4,21 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class Regler extends Activity {
+
+    // Konstant for språk dialog
+    private static final int DIALOG_ALERT = 10;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.seregler);
         getActionBar().setDisplayHomeAsUpEnabled(true);
+
+        
     }
 
     @Override

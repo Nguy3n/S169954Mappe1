@@ -22,10 +22,10 @@ import android.content.res.Resources;
 public class Hoved extends Activity {
 
     Spinner spraakSpinner;
+    Locale myLocale;
     Button spillKnapp;
     Button reglerKnapp;
     Button avsluttKnapp;
-    Locale myLocale;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
