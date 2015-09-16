@@ -4,8 +4,16 @@
 
     <stroke
         android:width="2dp"
-        android:color="@color/blue">
-        
-    </stroke>
+        android:color="@color/blue"/>
+
+    <solid
+        android:color="@color/purple"/>
+
+    <padding
+        android:bottom="7dp"/>
+
+    <size
+        android:height="10dp"
+        android:width="10dp"/>
 
 </shape>
