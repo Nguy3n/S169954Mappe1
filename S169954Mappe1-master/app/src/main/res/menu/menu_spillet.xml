@@ -5,10 +5,10 @@
         android:id="@+id/tips"
         android:orderInCategory="100"
         android:showAsAction="always"
-        android:title="Tips"/>
+        android:title="@string/tips_knapp"/>
     <item
         android:id="@+id/spraak"
         android:orderInCategory="100"
         android:showAsAction="always"
-        android:title="Språk"/>
+        android:title="@string/spraak"/>
 </menu>

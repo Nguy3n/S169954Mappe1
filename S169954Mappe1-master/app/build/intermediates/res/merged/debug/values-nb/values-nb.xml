@@ -61,11 +61,14 @@
     <string name="endre_spraak">Endre Språk</string>
     <string name="reglene">Hangman er et spill for to personer. Det spilles ved hjelp av et papirark og en blyant. Den ene spilleren tenker på et ord (eller uttrykk), og den andre forsøker å finne frem til ordet ved å foreslå bokstaver.Ordet man skal forsøke å gjette seg frem til, angis med en rad med streker, der hver strek angir én bokstav. Hvis spilleren som gjetter foreslår en bokstav som finnes i ordet, skriver den andre spilleren denne bokstaven i alle de riktige posisjonene. Hvis bokstaven som foreslås ikke er med i ordet, tegner den andre spilleren ett av elementene i Hangman-diagrammet. -Wikipedia</string>
     <string name="se_regler">Se Regler</string>
+    <string name="spraak">Språk</string>
     <string name="start_spill">Start Spill</string>
     <!-- From: file:/Users/toeffen/Documents/H2015/Apputvikling/checkout/S169954Mappe1/S169954Mappe1-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-nb/values-nb.xml -->
     <eat-comment/>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
     <!-- From: file:/Users/toeffen/Documents/H2015/Apputvikling/checkout/S169954Mappe1/S169954Mappe1-master/app/src/main/res/values-nb/strings.xml -->
     <eat-comment/>
+    <string name="tips">Det kan være lurt å starte spillet med å gjette på en vokal.</string>
+    <string name="tips_knapp">Tips</string>
     <string name="tittel">Hangman-spill</string>
 </resources>

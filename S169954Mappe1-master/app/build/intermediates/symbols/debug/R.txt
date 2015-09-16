@@ -598,9 +598,12 @@ int string avslutt_spill 0x7f060014
 int string endre_spraak 0x7f060015
 int string reglene 0x7f060016
 int string se_regler 0x7f060017
-int string start_spill 0x7f060018
+int string spraak 0x7f060018
+int string start_spill 0x7f060019
 int string status_bar_notification_info_overflow 0x7f060011
-int string tittel 0x7f060019
+int string tips 0x7f06001a
+int string tips_knapp 0x7f06001b
+int string tittel 0x7f06001c
 int style AlertDialog_AppCompat 0x7f09007a
 int style AlertDialog_AppCompat_Light 0x7f09007b
 int style Animation_AppCompat_Dialog 0x7f09007c

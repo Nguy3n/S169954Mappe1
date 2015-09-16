@@ -1751,9 +1751,12 @@ containing a value of this type.
         public static final int endre_spraak=0x7f060015;
         public static final int reglene=0x7f060016;
         public static final int se_regler=0x7f060017;
-        public static final int start_spill=0x7f060018;
+        public static final int spraak=0x7f060018;
+        public static final int start_spill=0x7f060019;
         public static final int status_bar_notification_info_overflow=0x7f060011;
-        public static final int tittel=0x7f060019;
+        public static final int tips=0x7f06001a;
+        public static final int tips_knapp=0x7f06001b;
+        public static final int tittel=0x7f06001c;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f09007a;

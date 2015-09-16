@@ -24,7 +24,7 @@ public class Spillet extends Activity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.tips:
-                Toast.makeText(getApplicationContext(),"Trykket Tips", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), this.getString(R.string.tips), Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.spraak:
                 Toast.makeText(getApplicationContext(),"Trykket Språk", Toast.LENGTH_SHORT).show();
