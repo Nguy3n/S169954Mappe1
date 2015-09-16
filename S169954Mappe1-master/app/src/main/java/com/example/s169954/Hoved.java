@@ -37,6 +37,7 @@ public class Hoved extends Activity {
         spraakSpinner.setAdapter(myAdapter);
 
         spraakSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
@@ -45,14 +46,12 @@ public class Hoved extends Activity {
                             "Du har forandret språket til Norsk!", Toast.LENGTH_SHORT)
                             .show();
                     setLocale("nb");
-                }
-                else if (position == 2) {
+                } else if (position == 2) {
                     Toast.makeText(parent.getContext(),
                             "You have changed the language to English!", Toast.LENGTH_SHORT)
                             .show();
                     setLocale("en");
-                }
-                else if (position == 3) {
+                } else if (position == 3) {
                     Toast.makeText(parent.getContext(),
                             "Sie haben die Sprache auf Deutsch ändern!", Toast.LENGTH_SHORT)
                             .show();
@@ -63,6 +62,34 @@ public class Hoved extends Activity {
             @Override
             public void onNothingSelected(AdapterView<?> arg0) {
                 // TODO
+            }
+        });
+
+        spillKnapp = (Button)findViewById(R.id.start_spill);
+        reglerKnapp = (Button)findViewById(R.id.se_regler);
+        avsluttKnapp = (Button)findViewById(R.id.avslutt);
+
+        spillKnapp.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(Hoved.this, Spillet.class);
+                startActivity(myIntent);
+            }
+        });
+
+        reglerKnapp.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(Hoved.this, Regler.class);
+                startActivity(myIntent);
+            }
+        });
+
+        avsluttKnapp.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+                System.exit(0);
             }
         });
     }
@@ -81,7 +108,7 @@ public class Hoved extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        //getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -99,70 +126,5 @@ public class Hoved extends Activity {
                 return super.onOptionsItemSelected(item);
 
         }
-    }
-
-    /*public void addListenerOnButton() {
-
-        reglerKnapp = (Button) findViewById(R.id.se_regler);
-        spillKnapp = (Button) findViewById(R.id.start_spill);
-        avsluttKnapp = (Button) findViewById(R.id.avslutt);
-
-        reglerKnapp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent1 = new Intent(getApplicationContext(), Regler.class);
-                startActivity(intent1);
-            }
-        });
-
-        spillKnapp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent2 = new Intent(getApplicationContext(),Spillet.class);
-                startActivity(intent2);
-            }
-        });
-
-        avsluttKnapp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-                System.exit(0);
-
-            }
-        });
-    }*/
-
-    /*public void buttonListener(View view) {
-        String knapp;
-        knapp = ((Button) view).getText().toString();
-        if(knapp.equals(R.id.start_spill)) {
-            Intent spillIntent = new Intent(getApplicationContext(), Spillet.class);
-            startActivity(spillIntent);
-        }
-        else if(knapp.equals(R.id.se_regler)) {
-            Intent reglerIntent = new Intent(getApplicationContext(), Regler.class);
-            startActivity(reglerIntent);
-        }
-        else if(knapp.equals(R.id.avslutt)) {
-            finish();
-            System.exit(0);
-        }
-    }*/
-
-    public void knappListener() {
-        final Context context = this;
-
-        spillKnapp = (Button)findViewById(R.id.start_spill);
-        reglerKnapp = (Button)findViewById(R.id.se_regler);
-        avsluttKnapp = (Button)findViewById(R.id.avslutt);
-
-        spillKnapp.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-                Intent intent = new Intent(context, Spillet.class);
-                startActivity(intent);
-            }
-        });
     }
 }
