@@ -2,8 +2,8 @@
 <resources>
     <array name="wordArray">
         <item>marble</item>
-        <item>teddy bear</item>
-        <item>christmas socks</item>
+        <item>teddybear</item>
+        <item>christmassocks</item>
         <item>apple</item>
         <item>nightstand</item>
         <item>rollerblades</item>
@@ -11,18 +11,18 @@
         <item>berries</item>
         <item>snowman</item>
         <item>kayak</item>
-        <item>birthday party</item>
+        <item>birthdayparty</item>
         <item>disneyworld</item>
         <item>gorilla</item>
         <item>zoo</item>
-        <item>prawn sandwich</item>
+        <item>prawnsandwich</item>
         <item>airport</item>
-        <item>success tart</item>
+        <item>successtart</item>
         <item>starry</item>
         <item>sandstorm</item>
         <item>space</item>
         <item>excitement</item>
-        <item>dream job</item>
+        <item>dreamjob</item>
         <item>block</item>
         <item>liseberg</item>
         <item>eraser</item>
@@ -30,6 +30,6 @@
         <item>hurtigruten</item>
         <item>coat trend</item>
         <item>backpack</item>
-        <item>application programming interface</item>
+        <item>applicationprogramminginterface</item>
     </array>
 </resources>

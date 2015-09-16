@@ -11,6 +11,7 @@ public class Regler extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.seregler);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
@@ -24,7 +25,7 @@ public class Regler extends Activity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.spraak:
-                Toast.makeText(getApplicationContext(),"Trykket Srpåk", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Trykket Språk", Toast.LENGTH_SHORT).show();
                 return true;
 
             default:

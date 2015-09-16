@@ -4,8 +4,8 @@
     <eat-comment/>
     <array name="wordArray">
         <item>marmor</item>
-        <item>bär</item>
-        <item>weihnachten socken</item>
+        <item>baer</item>
+        <item>weihnachtensocken</item>
         <item>apfel</item>
         <item>nachttisch</item>
         <item>rollerbladen</item>
@@ -19,7 +19,7 @@
         <item>zoo</item>
         <item>garnelensandwich</item>
         <item>flughafen</item>
-        <item>erfolg tart</item>
+        <item>erfolgtart</item>
         <item>sternen</item>
         <item>sandsturm</item>
         <item>raum</item>
@@ -28,9 +28,9 @@
         <item>clock</item>
         <item>liseberg</item>
         <item>radiergummi</item>
-        <item>ernährung</item>
+        <item>ernaehrung</item>
         <item>hurtigruten</item>
-        <item>verkleidung trend</item>
+        <item>verkleidungtrend</item>
         <item>rucksack</item>
         <item>Anwendungsprogrammierschnittstelle</item>
     </array>
@@ -65,4 +65,7 @@
     <!-- From: file:/Users/toeffen/Documents/H2015/Apputvikling/checkout/S169954Mappe1/S169954Mappe1-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-de/values-de.xml -->
     <eat-comment/>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <!-- From: file:/Users/toeffen/Documents/H2015/Apputvikling/checkout/S169954Mappe1/S169954Mappe1-master/app/src/main/res/values-de/strings.xml -->
+    <eat-comment/>
+    <string name="tittel">Galgenmännchen Spiele</string>
 </resources>

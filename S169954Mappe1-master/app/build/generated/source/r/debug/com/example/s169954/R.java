@@ -1753,6 +1753,7 @@ containing a value of this type.
         public static final int se_regler=0x7f060017;
         public static final int start_spill=0x7f060018;
         public static final int status_bar_notification_info_overflow=0x7f060011;
+        public static final int tittel=0x7f060019;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f09007a;

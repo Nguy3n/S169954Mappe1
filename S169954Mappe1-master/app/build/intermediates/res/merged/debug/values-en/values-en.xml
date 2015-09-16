@@ -4,8 +4,8 @@
     <eat-comment/>
     <array name="wordArray">
         <item>marble</item>
-        <item>teddy bear</item>
-        <item>christmas socks</item>
+        <item>teddybear</item>
+        <item>christmassocks</item>
         <item>apple</item>
         <item>nightstand</item>
         <item>rollerblades</item>
@@ -13,18 +13,18 @@
         <item>berries</item>
         <item>snowman</item>
         <item>kayak</item>
-        <item>birthday party</item>
+        <item>birthdayparty</item>
         <item>disneyworld</item>
         <item>gorilla</item>
         <item>zoo</item>
-        <item>prawn sandwich</item>
+        <item>prawnsandwich</item>
         <item>airport</item>
-        <item>success tart</item>
+        <item>successtart</item>
         <item>starry</item>
         <item>sandstorm</item>
         <item>space</item>
         <item>excitement</item>
-        <item>dream job</item>
+        <item>dreamjob</item>
         <item>block</item>
         <item>liseberg</item>
         <item>eraser</item>
@@ -32,7 +32,7 @@
         <item>hurtigruten</item>
         <item>coat trend</item>
         <item>backpack</item>
-        <item>application programming interface</item>
+        <item>applicationprogramminginterface</item>
     </array>
     <!-- From: file:/Users/toeffen/Documents/H2015/Apputvikling/checkout/S169954Mappe1/S169954Mappe1-master/app/src/main/res/values-en/strings.xml -->
     <eat-comment/>
@@ -43,4 +43,5 @@
     <string name="reglene">Hangman is a game for two people. It is played using a sheet of paper and a pencil. One player thinks of a word (or phrase) and the other trying to find the word by suggesting bokstaver.Ordet one should try to guess the setting is represented by a row of dashes, each bar indicates one letter. If the player who guesses suggest a letter that is in the word, enter the second player this letter in all the right positions. If the letter proposed are not in word, draw the other player one of the elements in Hangman diagram. -Wikipedia</string>
     <string name="se_regler">See Rules</string>
     <string name="start_spill">Start Game</string>
+    <string name="tittel">Hangman game</string>
 </resources>
