@@ -1607,6 +1607,7 @@ containing a value of this type.
         public static final int edit_query=0x7f0d0040;
         public static final int end=0x7f0d0019;
         public static final int end_padder=0x7f0d005d;
+        public static final int engelsk=0x7f0d0061;
         public static final int expand_activities_button=0x7f0d0025;
         public static final int expanded_menu=0x7f0d0035;
         public static final int home=0x7f0d0004;
@@ -1625,6 +1626,7 @@ containing a value of this type.
         public static final int never=0x7f0d001e;
         public static final int none=0x7f0d000e;
         public static final int normal=0x7f0d000a;
+        public static final int norsk=0x7f0d0060;
         public static final int parentPanel=0x7f0d002b;
         public static final int progress_circular=0x7f0d0005;
         public static final int progress_horizontal=0x7f0d0006;
@@ -1662,10 +1664,11 @@ containing a value of this type.
         public static final int textSpacerNoButtons=0x7f0d0031;
         public static final int textView=0x7f0d005e;
         public static final int time=0x7f0d0057;
-        public static final int tips=0x7f0d0060;
+        public static final int tips=0x7f0d0063;
         public static final int title=0x7f0d002a;
         public static final int title_template=0x7f0d002d;
         public static final int topPanel=0x7f0d002c;
+        public static final int tysk=0x7f0d0062;
         public static final int up=0x7f0d0008;
         public static final int useLogo=0x7f0d0012;
         public static final int withText=0x7f0d001f;
@@ -1748,18 +1751,19 @@ containing a value of this type.
         public static final int action_settings=0x7f060012;
         public static final int app_name=0x7f060013;
         public static final int avslutt_spill=0x7f060014;
-        public static final int endre_spraak=0x7f060015;
-        public static final int engelsk=0x7f06001d;
-        public static final int norsk=0x7f06001e;
-        public static final int reglene=0x7f060016;
-        public static final int se_regler=0x7f060017;
-        public static final int spraak=0x7f060018;
-        public static final int start_spill=0x7f060019;
+        public static final int byttspraak=0x7f060015;
+        public static final int endre_spraak=0x7f060016;
+        public static final int engelsk=0x7f060017;
+        public static final int norsk=0x7f060018;
+        public static final int reglene=0x7f060019;
+        public static final int se_regler=0x7f06001a;
+        public static final int spraak=0x7f06001b;
+        public static final int start_spill=0x7f06001c;
         public static final int status_bar_notification_info_overflow=0x7f060011;
-        public static final int tips=0x7f06001a;
-        public static final int tips_knapp=0x7f06001b;
-        public static final int tittel=0x7f06001c;
-        public static final int tysk=0x7f06001f;
+        public static final int tips=0x7f06001d;
+        public static final int tips_knapp=0x7f06001e;
+        public static final int tittel=0x7f06001f;
+        public static final int tysk=0x7f060020;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f09007a;

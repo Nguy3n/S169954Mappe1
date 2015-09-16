@@ -58,7 +58,10 @@
     <string name="action_settings">Innstillinger</string>
     <string name="app_name">Hangman</string>
     <string name="avslutt_spill">Avslutt</string>
+    <string name="byttspraak">Dette vil endre all tekst i applikasjonen til:</string>
     <string name="endre_spraak">Endre Språk</string>
+    <string name="engelsk">Engelsk</string>
+    <string name="norsk">Norsk</string>
     <string name="reglene">Hangman er et spill for to personer. Det spilles ved hjelp av et papirark og en blyant. Den ene spilleren tenker på et ord (eller uttrykk), og den andre forsøker å finne frem til ordet ved å foreslå bokstaver.Ordet man skal forsøke å gjette seg frem til, angis med en rad med streker, der hver strek angir én bokstav. Hvis spilleren som gjetter foreslår en bokstav som finnes i ordet, skriver den andre spilleren denne bokstaven i alle de riktige posisjonene. Hvis bokstaven som foreslås ikke er med i ordet, tegner den andre spilleren ett av elementene i Hangman-diagrammet. -Wikipedia</string>
     <string name="se_regler">Se Regler</string>
     <string name="spraak">Språk</string>
@@ -71,4 +74,5 @@
     <string name="tips">Det kan være lurt å starte spillet med å gjette på en vokal.</string>
     <string name="tips_knapp">Tips</string>
     <string name="tittel">Hangman-spill</string>
+    <string name="tysk">Tysk</string>
 </resources>

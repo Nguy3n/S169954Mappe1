@@ -6,9 +6,27 @@
         android:orderInCategory="100"
         android:showAsAction="always"
         android:title="@string/tips_knapp"/>
+
     <item
         android:id="@+id/spraak"
         android:orderInCategory="100"
         android:showAsAction="always"
-        android:title="@string/spraak"/>
+        android:title="@string/spraak">
+        <menu>
+            <item
+                android:id="@+id/norsk"
+                android:showAsAction="ifRoom"
+                android:title="@string/norsk"/>
+
+            <item
+                android:id="@+id/engelsk"
+                android:showAsAction="ifRoom"
+                android:title="@string/engelsk"/>
+
+            <item
+                android:id="@+id/tysk"
+                android:showAsAction="ifRoom"
+                android:title="@string/tysk"/>
+        </menu>
+    </item>
 </menu>

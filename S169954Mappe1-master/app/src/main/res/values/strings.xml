@@ -5,6 +5,7 @@
     <string name="start_spill">Start Spill</string>
     <string name="tittel">Hangman-spill</string>
     <string name="spraak">Språk</string>
+    <string name="byttspraak">Dette vil endre all tekst i applikasjonen til:</string>
     <string name="norsk">Norsk</string>
     <string name="engelsk">English</string>
     <string name="tysk">Deutsch</string>

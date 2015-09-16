@@ -213,6 +213,7 @@
     <string name="action_settings">Settings</string>
     <string name="app_name">Hangman</string>
     <string name="avslutt_spill">Avslutt</string>
+    <string name="byttspraak">Dette vil endre all tekst i applikasjonen til:</string>
     <string name="endre_spraak">Endre Språk</string>
     <string name="engelsk">English</string>
     <string name="norsk">Norsk</string>
