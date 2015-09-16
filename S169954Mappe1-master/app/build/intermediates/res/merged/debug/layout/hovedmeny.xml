@@ -26,8 +26,8 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/endre_spraak"
-        android:text="@string/endre_spraak"/>
+        android:id="@+id/se_regler"
+        android:text="@string/se_regler"/>
 
     <Button
         android:layout_width="match_parent"

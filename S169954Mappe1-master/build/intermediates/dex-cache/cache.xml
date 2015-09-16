@@ -2,32 +2,32 @@
 <items version="2" >
 
     <item
-        jar="/Users/toeffen/Documents/H2015/Apputvikling/S169954Mappe1-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/classes.jar"
+        jar="/Users/toeffen/Documents/H2015/Apputvikling/checkout/S169954Mappe1/S169954Mappe1-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/jars/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
-        <dex dex="/Users/toeffen/Documents/H2015/Apputvikling/S169954Mappe1-master/app/build/intermediates/pre-dexed/debug/classes-1f1e6d41758b2109ae2e388bd7e7ff6235a64cb7.jar" />
+        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
+        <dex dex="/Users/toeffen/Documents/H2015/Apputvikling/checkout/S169954Mappe1/S169954Mappe1-master/app/build/intermediates/pre-dexed/debug/classes-be77b8c224d82c639b7e839adf91eabaef2b838e.jar" />
     </item>
     <item
         jar="/Users/toeffen/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.0/support-annotations-23.0.0.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
-        <dex dex="/Users/toeffen/Documents/H2015/Apputvikling/S169954Mappe1-master/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.0-27ac9b4446a663c6168a96284ed9b04652db865f.jar" />
+        <dex dex="/Users/toeffen/Documents/H2015/Apputvikling/checkout/S169954Mappe1/S169954Mappe1-master/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.0-27ac9b4446a663c6168a96284ed9b04652db865f.jar" />
     </item>
     <item
-        jar="/Users/toeffen/Documents/H2015/Apputvikling/S169954Mappe1-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/libs/internal_impl-23.0.0.jar"
+        jar="/Users/toeffen/Documents/H2015/Apputvikling/checkout/S169954Mappe1/S169954Mappe1-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
+        <dex dex="/Users/toeffen/Documents/H2015/Apputvikling/checkout/S169954Mappe1/S169954Mappe1-master/app/build/intermediates/pre-dexed/debug/classes-669abdf8ee5df679bfe8cb91fe8dfe45e885d18c.jar" />
+    </item>
+    <item
+        jar="/Users/toeffen/Documents/H2015/Apputvikling/checkout/S169954Mappe1/S169954Mappe1-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/libs/internal_impl-23.0.0.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
-        <dex dex="/Users/toeffen/Documents/H2015/Apputvikling/S169954Mappe1-master/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.0-feb2e2c4d92a14646e7f169df386f8be74117bd0.jar" />
-    </item>
-    <item
-        jar="/Users/toeffen/Documents/H2015/Apputvikling/S169954Mappe1-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/jars/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
-        <dex dex="/Users/toeffen/Documents/H2015/Apputvikling/S169954Mappe1-master/app/build/intermediates/pre-dexed/debug/classes-68938c5c3b45333009dd03b709def8d8c09cc71b.jar" />
+        <dex dex="/Users/toeffen/Documents/H2015/Apputvikling/checkout/S169954Mappe1/S169954Mappe1-master/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.0-94e9251724176bdadb6515b800fe4e318a644cf7.jar" />
     </item>
 
 </items>

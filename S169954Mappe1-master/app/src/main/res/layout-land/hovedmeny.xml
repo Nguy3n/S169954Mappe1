@@ -10,13 +10,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:src="@drawable/hoved_land"/>
+        android:src="@drawable/hoved"/>
 
-    <Button
+    <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/se_regler"
-        android:text="@string/se_regler"/>
+        android:id="@+id/spraak_spinner"/>
 
     <Button
         android:layout_width="match_parent"
@@ -27,13 +26,13 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/endre_spraak"
-        android:text="@string/endre_spraak"/>
+        android:id="@+id/se_regler"
+        android:text="@string/se_regler"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/seregler"
+        android:id="@+id/avslutt"
         android:text="@string/avslutt_spill"/>
 
 
