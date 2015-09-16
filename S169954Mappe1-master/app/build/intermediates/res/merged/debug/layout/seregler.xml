@@ -8,4 +8,4 @@
         android:layout_height="wrap_content"
         android:text="@string/reglene"
         android:id="@+id/textView"/>
-</LinearLayout><!-- From: file:/Users/toeffen/Documents/H2015/Apputvikling/S169954Mappe1-master/app/src/main/res/layout/seregler.xml -->
+</LinearLayout><!-- From: file:/Users/toeffen/Documents/H2015/Apputvikling/checkout/S169954Mappe1/S169954Mappe1-master/app/src/main/res/layout/seregler.xml -->
