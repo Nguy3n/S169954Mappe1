@@ -50,6 +50,13 @@ public class Spillet extends Activity {
     private int antallChars;
     private int antallKorrekt;
 
+    int vunnet;
+    int tapt;
+    String gjettet;
+    TextView vunnetTv;
+    TextView taptTv;
+    TextView gjettetTv;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -189,9 +196,15 @@ public class Spillet extends Activity {
     }
 
     public void bokstavTrykket(View view) {
+        vunnetTv= (TextView)findViewById(R.id.vunnet);
+        taptTv= (TextView)findViewById(R.id.tapt);
+        gjettetTv= (TextView)findViewById(R.id.gjettet);
 
         String bokstav = ((TextView)view).getText().toString();
         char bokstavChar = Character.toLowerCase(bokstav.charAt(0));
+
+        gjettet += bokstavChar;
+
         view.setEnabled(false);
         view.setBackgroundColor(0xFF000000);
 
@@ -214,6 +227,10 @@ public class Spillet extends Activity {
                     public void onClick(DialogInterface dialog, int id) {
                         Spillet.this.playGame();
                         restart();
+                        vunnet++;
+                        vunnetTv.setText("Vunnet: " + vunnet);
+                        taptTv.setText("Tapt: " + tapt);
+
                     }
                 });
 
@@ -238,6 +255,10 @@ public class Spillet extends Activity {
                 public void onClick(DialogInterface dialog, int id) {
                     Spillet.this.playGame();
                     restart();
+                    tapt++;
+                    vunnetTv.setText("Vunnet: " + vunnet);
+                    taptTv.setText("Tapt: " + tapt);
+
                 }
             });
             taptBuild.setNegativeButton("Avslutte", new DialogInterface.OnClickListener() {
@@ -253,6 +274,13 @@ public class Spillet extends Activity {
     public void restart() {
         Intent intent = getIntent();
         finish();
+        intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
         startActivity(intent);
     }
+
+    /*private void updateViews(String vunnet, String tapt, String gjettet) {
+
+
+
+    }*/
 }

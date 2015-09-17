@@ -1,4 +1,4 @@
-package com.example.s169954;
+/*package com.example.s169954;
 
 import android.text.Layout;
 import android.view.View;
@@ -54,3 +54,4 @@ public class BokstavAdapter extends BaseAdapter  {
         return 0;
     }
 }
+*/

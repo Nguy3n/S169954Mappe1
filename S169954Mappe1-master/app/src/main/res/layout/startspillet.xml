@@ -8,14 +8,46 @@
     android:layout_gravity="bottom"
     tools:context=".MainActivity">
 
-
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/tittel"
-        android:layout_weight="0"
-        android:layout_gravity="top" />
+        android:orientation="horizontal">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vunnet: "/>
 
+        <TextView
+            android:id="@+id/vunnet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:paddingRight="40dp"/>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tapt: "/>
+
+        <TextView
+            android:id="@+id/tapt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:paddingRight="40dp"/>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gjettet på: "/>
+
+        <TextView
+            android:id="@+id/gjettet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+    </LinearLayout>
     <!-- Hangman bilde -->
     <RelativeLayout
         android:layout_width="fill_parent"
