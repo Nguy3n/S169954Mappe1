@@ -1583,19 +1583,20 @@ containing a value of this type.
         public static final int arm2=0x7f02003f;
         public static final int bein1=0x7f020040;
         public static final int bein2=0x7f020041;
-        public static final int bokstav_brukt=0x7f020042;
-        public static final int bokstav_ubrukt=0x7f020043;
-        public static final int galgen=0x7f020044;
-        public static final int hele=0x7f020045;
-        public static final int hode=0x7f020046;
-        public static final int hoved=0x7f020047;
-        public static final int hoved_land=0x7f020048;
-        public static final int image=0x7f020049;
-        public static final int image_land=0x7f02004a;
-        public static final int introskjerm_bg=0x7f02004b;
-        public static final int introskjerm_bg_land=0x7f02004c;
-        public static final int kroppen=0x7f02004d;
-        public static final int notification_template_icon_bg=0x7f02004e;
+        public static final int bokstav_bg=0x7f020042;
+        public static final int bokstav_brukt=0x7f020043;
+        public static final int bokstav_ubrukt=0x7f020044;
+        public static final int galgen=0x7f020045;
+        public static final int hele=0x7f020046;
+        public static final int hode=0x7f020047;
+        public static final int hoved=0x7f020048;
+        public static final int hoved_land=0x7f020049;
+        public static final int image=0x7f02004a;
+        public static final int image_land=0x7f02004b;
+        public static final int introskjerm_bg=0x7f02004c;
+        public static final int introskjerm_bg_land=0x7f02004d;
+        public static final int kroppen=0x7f02004e;
+        public static final int notification_template_icon_bg=0x7f02004f;
     }
     public static final class id {
         public static final int action0=0x7f0d0053;
@@ -1622,6 +1623,9 @@ containing a value of this type.
         public static final int beginning=0x7f0d0018;
         public static final int bein1=0x7f0d0065;
         public static final int bein2=0x7f0d0066;
+        public static final int bokstaver1=0x7f0d0068;
+        public static final int bokstaver2=0x7f0d0069;
+        public static final int bokstaver3=0x7f0d006a;
         public static final int buttonPanel=0x7f0d0034;
         public static final int cancel_action=0x7f0d0054;
         public static final int checkbox=0x7f0d0036;
@@ -1636,7 +1640,7 @@ containing a value of this type.
         public static final int edit_query=0x7f0d0040;
         public static final int end=0x7f0d0019;
         public static final int end_padder=0x7f0d005f;
-        public static final int engelsk=0x7f0d006a;
+        public static final int engelsk=0x7f0d006d;
         public static final int expand_activities_button=0x7f0d0025;
         public static final int expanded_menu=0x7f0d0035;
         public static final int hode=0x7f0d0061;
@@ -1658,7 +1662,7 @@ containing a value of this type.
         public static final int never=0x7f0d001e;
         public static final int none=0x7f0d000e;
         public static final int normal=0x7f0d000a;
-        public static final int norsk=0x7f0d0069;
+        public static final int norsk=0x7f0d006c;
         public static final int ordet=0x7f0d0067;
         public static final int parentPanel=0x7f0d002b;
         public static final int playKnapp=0x7f0d0052;
@@ -1684,7 +1688,7 @@ containing a value of this type.
         public static final int showHome=0x7f0d0010;
         public static final int showTitle=0x7f0d0011;
         public static final int split_action_bar=0x7f0d0007;
-        public static final int spraak=0x7f0d0068;
+        public static final int spraak=0x7f0d006b;
         public static final int spraak_spinner=0x7f0d004d;
         public static final int src_atop=0x7f0d0015;
         public static final int src_in=0x7f0d0016;
@@ -1698,11 +1702,11 @@ containing a value of this type.
         public static final int textSpacerNoButtons=0x7f0d0031;
         public static final int textView=0x7f0d0060;
         public static final int time=0x7f0d0059;
-        public static final int tips=0x7f0d006c;
+        public static final int tips=0x7f0d006f;
         public static final int title=0x7f0d002a;
         public static final int title_template=0x7f0d002d;
         public static final int topPanel=0x7f0d002c;
-        public static final int tysk=0x7f0d006b;
+        public static final int tysk=0x7f0d006e;
         public static final int up=0x7f0d0008;
         public static final int useLogo=0x7f0d0012;
         public static final int withText=0x7f0d001f;

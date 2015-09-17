@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/playKnapp"
         android:text="► PLAY"
-        android:textColor="@color/darkred"
+        android:textColor="@color/blue"
         android:clickable="true"
         android:width="150dp"
         android:height="100dp"
