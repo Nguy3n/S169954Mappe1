@@ -171,7 +171,7 @@
             android:layout_width="32dp"
             android:layout_height="wrap_content"
             android:text="O"
-            android:onClick="bokstaTrykket"/>
+            android:onClick="bokstavTrykket"/>
 
         <Button
             android:id="@+id/knappP"

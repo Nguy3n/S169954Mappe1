@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.LinearLayout;
+import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -71,6 +72,7 @@ public class Spillet extends Activity {
         hengmannDeler[4] = (ImageView)findViewById(R.id.arm2);
         hengmannDeler[5] = (ImageView)findViewById(R.id.bein1);
         hengmannDeler[6] = (ImageView)findViewById(R.id.bein2);
+
 
         /*Button knappQ = (Button)findViewById(R.id.knappQ);
         Button knappW = (Button)findViewById(R.id.knappW);
@@ -204,12 +206,14 @@ public class Spillet extends Activity {
 
         if(riktig) {
             if(antallKorrekt == antallChars) {
+                restart();
                 AlertDialog.Builder vunnetBuild = new AlertDialog.Builder(this);
                 vunnetBuild.setTitle("YESS!");
                 vunnetBuild.setMessage("Du har vunnet!\nRiktig svar var: " + gjeldendeOrd + "!");
                 vunnetBuild.setPositiveButton("Spill igjen", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         Spillet.this.playGame();
+                        restart();
                     }
                 });
 
@@ -233,6 +237,7 @@ public class Spillet extends Activity {
             taptBuild.setPositiveButton("Spill igjen", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int id) {
                     Spillet.this.playGame();
+                    restart();
                 }
             });
             taptBuild.setNegativeButton("Avslutte", new DialogInterface.OnClickListener() {
@@ -245,10 +250,9 @@ public class Spillet extends Activity {
         }
     }
 
-    public void fjernKnapper() {
-        antallDeler = 0;
-
-        Bundle bundle = new Bundle();
-        onCreate(bundle);
+    public void restart() {
+        Intent intent = getIntent();
+        finish();
+        startActivity(intent);
     }
 }
