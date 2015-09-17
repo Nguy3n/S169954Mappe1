@@ -38,10 +38,17 @@
     <eat-comment/>
     <string name="action_settings">Settings</string>
     <string name="app_name">Hangman</string>
+    <string name="arm1"/>
+    <string name="arm2"/>
     <string name="avslutt_spill">Quit Game</string>
+    <string name="bein1"/>
+    <string name="bein2"/>
     <string name="byttspraak">This will change all text in your application to:</string>
     <string name="endre_spraak">Change language</string>
     <string name="engelsk">English</string>
+    <string name="galgen"/>
+    <string name="hode"/>
+    <string name="kroppen"/>
     <string name="norsk">Norwegian</string>
     <string name="reglene">Hangman is a game for two people. It is played using a sheet of paper and a pencil. One player thinks of a word (or phrase) and the other trying to find the word by suggesting bokstaver.Ordet one should try to guess the setting is represented by a row of dashes, each bar indicates one letter. If the player who guesses suggest a letter that is in the word, enter the second player this letter in all the right positions. If the letter proposed are not in word, draw the other player one of the elements in Hangman diagram. -Wikipedia</string>
     <string name="se_regler">See Rules</string>

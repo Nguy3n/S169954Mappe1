@@ -7,13 +7,12 @@
         android:color="@color/blue"/>
 
     <solid
-        android:color="@color/purple"/>
+        android:color="@color/black"/>
 
     <padding
         android:bottom="7dp"/>
 
     <size
-        android:height="10dp"
-        android:width="10dp"/>
-
+        android:height="25dp"
+        android:width="25dp"/>
 </shape>

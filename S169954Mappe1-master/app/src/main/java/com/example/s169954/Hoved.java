@@ -88,8 +88,12 @@ public class Hoved extends Activity {
         avsluttKnapp.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
-                System.exit(0);
+                //finish();
+                //System.exit(0);
+
+                Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.addCategory(Intent.CATEGORY_HOME);
+                startActivity(intent);
             }
         });
     }

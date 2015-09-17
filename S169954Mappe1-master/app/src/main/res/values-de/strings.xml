@@ -14,4 +14,12 @@
     <string name="reglene">Hangman ist ein Spiel für zwei Personen. Es wird mit einem Blatt Papier und einem Bleistift gespielt. Ein Spieler denkt an ein Wort (oder Satz) und der andere versucht, das Wort der Eingabe bokstaver.Ordet sollte man versuchen zu erraten, die Einstellung wird durch eine Reihe von Strichen dargestellt zu finden, jeder Balken zeigt ein Buchstabe. Wenn der Spieler, der errät vorschlagen, einen Brief, in dem Wort ist, geben Sie das zweite Spieler diesen Brief an den richtigen Positionen. Wenn die vorgeschlagene Buchstaben sind nicht in Worten, ziehen die anderen Spieler eines der Elemente in Hangman Diagramm. -Wikipedia</string>
     <string name="endre_spraak">Sprache Ändern</string>
     <string name="avslutt_spill">Abschluss</string>
+
+    <string name="galgen"></string>
+    <string name="hode"></string>
+    <string name="kroppen"></string>
+    <string name="arm1"></string>
+    <string name="arm2"></string>
+    <string name="bein1"></string>
+    <string name="bein2"></string>
 </resources>
