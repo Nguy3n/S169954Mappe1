@@ -20,6 +20,7 @@ import java.util.Locale;
 import java.util.Random;
 import java.util.Set;
 
+import java.io.*;
 import android.graphics.Color;
 import android.view.Gravity;
 import android.view.ViewGroup.LayoutParams;
@@ -41,7 +42,6 @@ public class Spillet extends Activity {
     private String nyOrd;
     private LinearLayout ordLayout;
     private TextView[] charViews;
-    private Button q, w, e, r, t, y, u, i, o, p, aa, a, s, d, f, g, h, j, k, l, oe, ae, z, x, c, v, b, n, m;
 
     private ImageView[] hengmannDeler;
     private int antallDeler = 7;
@@ -72,7 +72,7 @@ public class Spillet extends Activity {
         hengmannDeler[5] = (ImageView)findViewById(R.id.bein1);
         hengmannDeler[6] = (ImageView)findViewById(R.id.bein2);
 
-        Button knappQ = (Button)findViewById(R.id.knappQ);
+        /*Button knappQ = (Button)findViewById(R.id.knappQ);
         Button knappW = (Button)findViewById(R.id.knappW);
         Button knappE = (Button)findViewById(R.id.knappE);
         Button knappR = (Button)findViewById(R.id.knappR);
@@ -100,7 +100,7 @@ public class Spillet extends Activity {
         Button knappV = (Button)findViewById(R.id.knappV);
         Button knappB = (Button)findViewById(R.id.knappB);
         Button knappN = (Button)findViewById(R.id.knappN);
-        Button knappM = (Button)findViewById(R.id.knappM);
+        Button knappM = (Button)findViewById(R.id.knappM);*/
 
         playGame();
     }
@@ -187,8 +187,9 @@ public class Spillet extends Activity {
     }
 
     public void bokstavTrykket(View view) {
+
         String bokstav = ((TextView)view).getText().toString();
-        char bokstavChar = bokstav.charAt(0);
+        char bokstavChar = Character.toLowerCase(bokstav.charAt(0));
         view.setEnabled(false);
         view.setBackgroundColor(0xFF000000);
 
@@ -197,7 +198,7 @@ public class Spillet extends Activity {
             if(gjeldendeOrd.charAt(i)==bokstavChar) {
                 riktig = true;
                 antallKorrekt++;
-                charViews[i].setTextColor(Color.BLACK);
+                charViews[i].setTextColor(Color.RED);
             }
         }
 
