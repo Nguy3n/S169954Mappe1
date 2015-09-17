@@ -50,8 +50,8 @@ public class Spillet extends Activity {
     private int antallChars;
     private int antallKorrekt;
 
-    int vunnet;
-    int tapt;
+    int vunnet = 0;
+    int tapt = 0;
     String gjettet;
     TextView vunnetTv;
     TextView taptTv;
@@ -227,9 +227,6 @@ public class Spillet extends Activity {
                     public void onClick(DialogInterface dialog, int id) {
                         Spillet.this.playGame();
                         restart();
-                        vunnet++;
-                        vunnetTv.setText("Vunnet: " + vunnet);
-                        taptTv.setText("Tapt: " + tapt);
 
                     }
                 });
@@ -255,10 +252,6 @@ public class Spillet extends Activity {
                 public void onClick(DialogInterface dialog, int id) {
                     Spillet.this.playGame();
                     restart();
-                    tapt++;
-                    vunnetTv.setText("Vunnet: " + vunnet);
-                    taptTv.setText("Tapt: " + tapt);
-
                 }
             });
             taptBuild.setNegativeButton("Avslutte", new DialogInterface.OnClickListener() {
@@ -273,14 +266,33 @@ public class Spillet extends Activity {
 
     public void restart() {
         Intent intent = getIntent();
-        finish();
+        //finish();
         intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
         startActivity(intent);
     }
 
-    /*private void updateViews(String vunnet, String tapt, String gjettet) {
+    public void setVunnet(int i) {
+        vunnet = i;
+    }
 
+    public void setTapt(int i) {
+        tapt = i;
+    }
 
+    public void setGjettet(char c) {
+        gjettet += c;
+        gjettet.toUpperCase();
+    }
 
-    }*/
+    public int getVunnet() {
+        return vunnet;
+    }
+
+    public int getTapt() {
+        return tapt;
+    }
+
+    public String getGjettet() {
+        return gjettet;
+    }
 }
