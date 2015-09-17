@@ -20,12 +20,13 @@
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@color/orange"
+        android:background="@color/white"
         android:gravity="center"
         android:paddingTop="5dp"
         android:paddingBottom="34dp">
 
         <ImageView
+            android:id="@+id/galgen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="@string/galgen"
