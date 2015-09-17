@@ -66,8 +66,8 @@ public class Spillet extends Activity {
 
             charViews[c].setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
             charViews[c].setGravity(Gravity.CENTER);
-            charViews[c].setTextColor(Color.BLACK);
-            charViews[c].setBackgroundResource(R.drawable.bokstav_ubrukt);
+            charViews[c].setTextColor(Color.WHITE);
+            charViews[c].setBackgroundResource(R.drawable.bokstav_bg);
 
             ordLayout.addView(charViews[c]);
         }

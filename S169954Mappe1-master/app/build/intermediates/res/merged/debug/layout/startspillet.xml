@@ -5,8 +5,6 @@
     android:orientation="vertical"
     android:layout_marginTop="10dp"
     android:layout_marginBottom="10dp"
-    android:layout_marginLeft="5dp"
-    android:layout_marginRight="5dp"
     android:layout_gravity="bottom"
     tools:context=".MainActivity">
 
@@ -18,12 +16,14 @@
         android:layout_weight="0"
         android:layout_gravity="top" />
 
+    <!-- Hangman bilde -->
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@color/orange"
         android:gravity="center"
-        android:paddingTop="5dp">
+        android:paddingTop="5dp"
+        android:paddingBottom="34dp">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -82,11 +82,12 @@
 
     </RelativeLayout>
 
+    <!-- Her står ordet man skal gjette på -->
     <LinearLayout
         android:id="@+id/ordet"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="15dp"
         android:background="@color/black"
         android:gravity="center"
         android:orientation="horizontal">
@@ -101,7 +102,7 @@
 
     <TableRow
         android:id="@+id/bokstaver1"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:layout_gravity="bottom"
@@ -109,76 +110,79 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/knappQ"
             android:layout_width="34dp"
             android:layout_height="wrap_content"
             android:text="Q"
             android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="40dp"
+            android:id="@+id/knappW"
+            android:layout_width="36dp"
             android:layout_height="wrap_content"
             android:text="W"
             android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="34dp"
+            android:id="@+id/knappE"
+            android:layout_width="32dp"
             android:layout_height="wrap_content"
             android:text="E"
             android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="34dp"
+            android:id="@+id/knappR"
+            android:layout_width="32dp"
             android:layout_height="wrap_content"
             android:text="R"
             android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="34dp"
+            android:id="@+id/knappT"
+            android:layout_width="31dp"
             android:layout_height="wrap_content"
             android:text="T"
             android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="34dp"
+            android:id="@+id/knappY"
+            android:layout_width="31dp"
             android:layout_height="wrap_content"
             android:text="Y"
             android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="34dp"
+            android:id="@+id/knappU"
+            android:layout_width="32dp"
             android:layout_height="wrap_content"
             android:text="U"
             android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="34dp"
+            android:id="@+id/knappI"
+            android:layout_width="32dp"
             android:layout_height="wrap_content"
             android:text="I"
             android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="34dp"
+            android:id="@+id/knappO"
+            android:layout_width="32dp"
             android:layout_height="wrap_content"
             android:text="O"
-            android:onClick="bokstavTrykket"/>
+            android:onClick="bokstaTrykket"/>
 
         <Button
-            android:layout_width="34dp"
+            android:id="@+id/knappP"
+            android:layout_width="32dp"
             android:layout_height="wrap_content"
             android:text="P"
             android:onClick="bokstavTrykket"/>
-
-        <Button
-            android:layout_width="34dp"
-            android:layout_height="wrap_content"
-            android:text="Å"
-            android:onClick="bokstavTrykket"/>
-
     </TableRow>
 
     <TableRow
         android:id="@+id/bokstaver2"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:layout_gravity="bottom"
@@ -186,76 +190,78 @@
         android:orientation="horizontal">
 
         <Button
-            android:layout_width="34dp"
+            android:id="@+id/knappA"
+            android:layout_width="33dp"
             android:layout_height="wrap_content"
             android:text="A"
             android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="34dp"
+            android:id="@+id/knappS"
+            android:layout_width="32dp"
             android:layout_height="wrap_content"
             android:text="S"
             android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="34dp"
+            android:id="@+id/knappD"
+            android:layout_width="33dp"
             android:layout_height="wrap_content"
             android:text="D"
             android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="34dp"
+            android:id="@+id/knappF"
+            android:layout_width="33dp"
             android:layout_height="wrap_content"
             android:text="F"
             android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="34dp"
+            android:id="@+id/knappG"
+            android:layout_width="33dp"
             android:layout_height="wrap_content"
             android:text="G"
             android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="34dp"
+            android:id="@+id/knappH"
+            android:layout_width="33dp"
             android:layout_height="wrap_content"
             android:text="H"
             android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="34dp"
+            android:id="@+id/knappJ"
+            android:layout_width="31dp"
             android:layout_height="wrap_content"
             android:text="J"
             android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="34dp"
+            android:id="@+id/knappK"
+            android:layout_width="31dp"
             android:layout_height="wrap_content"
             android:text="K"
             android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="34dp"
+            android:id="@+id/knappL"
+            android:layout_width="32dp"
             android:layout_height="wrap_content"
             android:text="L"
             android:onClick="bokstavTrykket"/>
-
         <Button
-            android:layout_width="34dp"
-            android:layout_height="wrap_content"
-            android:text="Ø"
-            android:onClick="bokstavTrykket"/>
-
-        <Button
-            android:layout_width="34dp"
+            android:id="@+id/knappAE"
+            android:layout_width="35dp"
             android:layout_height="wrap_content"
             android:text="Æ"
             android:onClick="bokstavTrykket"/>
-
     </TableRow>
 
     <TableRow
         android:id="@+id/bokstaver3"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:layout_gravity="bottom"
@@ -263,6 +269,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/knappZ"
             android:layout_width="34dp"
             android:layout_height="wrap_content"
             android:text="Z"
@@ -270,45 +277,63 @@
             android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="34dp"
+            android:id="@+id/knappX"
+            android:layout_width="33dp"
             android:layout_height="wrap_content"
             android:text="X"
             android:layout_weight="1"
             android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="34dp"
+            android:id="@+id/knappC"
+            android:layout_width="33dp"
             android:layout_height="wrap_content"
             android:text="C"
             android:layout_weight="1"
             android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="34dp"
+            android:id="@+id/knappV"
+            android:layout_width="33dp"
             android:layout_height="wrap_content"
             android:text="V"
             android:layout_weight="1"
             android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="34dp"
+            android:id="@+id/knappB"
+            android:layout_width="33dp"
             android:layout_height="wrap_content"
             android:text="B"
             android:layout_weight="1"
             android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="34dp"
+            android:id="@+id/knappN"
+            android:layout_width="35dp"
             android:layout_height="wrap_content"
             android:text="N"
             android:layout_weight="1"
             android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="40dp"
+            android:id="@+id/knappM"
+            android:layout_width="35dp"
             android:layout_height="wrap_content"
             android:text="M"
             android:layout_weight="1"
+            android:onClick="bokstavTrykket"/>
+        <Button
+            android:id="@+id/knappOE"
+            android:layout_width="34dp"
+            android:layout_height="wrap_content"
+            android:text="Ø"
+            android:onClick="bokstavTrykket"/>
+        <Button
+            android:id="@+id/knappAA"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:text="Å"
             android:onClick="bokstavTrykket"/>
     </TableRow>
 </LinearLayout>
