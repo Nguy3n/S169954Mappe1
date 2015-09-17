@@ -25,6 +25,7 @@ public class BokstavAdapter extends BaseAdapter  {
 
     @Override
     public int getCount() {
+
         return bokstaver.length;
     }
 
@@ -43,11 +44,13 @@ public class BokstavAdapter extends BaseAdapter  {
 
     @Override
     public Object getItem(int arg0) {
+
         return null;
     }
 
     @Override
     public long getItemId(int arg0) {
+
         return 0;
     }
 }
