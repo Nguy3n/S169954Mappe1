@@ -8,28 +8,16 @@ import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
-import android.widget.GridView;
 import android.widget.LinearLayout;
-import android.widget.TableLayout;
-import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
-import java.util.ArrayList;
-import java.util.LinkedHashSet;
 import java.util.Locale;
 import java.util.Random;
-import java.util.Set;
-
-import java.io.*;
 import android.graphics.Color;
 import android.view.Gravity;
 import android.view.ViewGroup.LayoutParams;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.support.v4.app.NavUtils;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -62,6 +50,12 @@ public class Spillet extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.startspillet);
         getActionBar().setDisplayHomeAsUpEnabled(true);
+
+        vunnetTv = (TextView)findViewById(R.id.vunnet);
+        vunnetTv.setText("Du har vunnet: " + vunnet);
+        taptTv = (TextView)findViewById(R.id.tapt);
+        taptTv.setText("Du har tapt: "+ tapt);
+
 
         Resources res = getResources();
         ord = res.getStringArray(R.array.wordArray);
@@ -219,7 +213,6 @@ public class Spillet extends Activity {
 
         if(riktig) {
             if(antallKorrekt == antallChars) {
-                restart();
                 AlertDialog.Builder vunnetBuild = new AlertDialog.Builder(this);
                 vunnetBuild.setTitle("YESS!");
                 vunnetBuild.setMessage("Du har vunnet!\nRiktig svar var: " + gjeldendeOrd + "!");
@@ -229,6 +222,7 @@ public class Spillet extends Activity {
                         restart();
 
                     }
+
                 });
 
                 vunnetBuild.setNegativeButton("Avslutt", new DialogInterface.OnClickListener() {
@@ -236,8 +230,8 @@ public class Spillet extends Activity {
                         Spillet.this.finish();
                     }
                 });
-
                 vunnetBuild.show();
+
             }
         }
         else if(gjeldendeDel < antallDeler) {
@@ -259,40 +253,16 @@ public class Spillet extends Activity {
                     Spillet.this.finish();
                 }
             });
-
+            ++tapt;
             taptBuild.show();
+
         }
     }
 
     public void restart() {
         Intent intent = getIntent();
-        //finish();
+        finish();
         intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
         startActivity(intent);
-    }
-
-    public void setVunnet(int i) {
-        vunnet = i;
-    }
-
-    public void setTapt(int i) {
-        tapt = i;
-    }
-
-    public void setGjettet(char c) {
-        gjettet += c;
-        gjettet.toUpperCase();
-    }
-
-    public int getVunnet() {
-        return vunnet;
-    }
-
-    public int getTapt() {
-        return tapt;
-    }
-
-    public String getGjettet() {
-        return gjettet;
     }
 }

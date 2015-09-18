@@ -12,40 +12,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Vunnet: "/>
 
         <TextView
             android:id="@+id/vunnet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=""
-            android:paddingRight="20dp"/>
 
-        <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tapt: "/>
+            android:paddingRight="20dp"/>
 
         <TextView
             android:id="@+id/tapt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=""
+
             android:paddingRight="20dp"/>
 
-        <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Gjettet på: "/>
 
         <TextView
             android:id="@+id/gjettet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=""/>
+            />
 
     </LinearLayout>
     <!-- Hangman bilde -->
