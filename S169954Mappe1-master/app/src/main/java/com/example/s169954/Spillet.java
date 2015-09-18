@@ -38,12 +38,12 @@ public class Spillet extends Activity {
     private int antallChars;
     private int antallKorrekt;
 
-    int vunnet = 0;
-    int tapt = 0;
-    String gjettet;
-    TextView vunnetTv;
-    TextView taptTv;
-    TextView gjettetTv;
+    private int vunnet = 0;
+    private int tapt = 0;
+    private String gjettet;
+    private TextView vunnetTv;
+    private TextView taptTv;
+    private TextView gjettetTv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,10 +51,17 @@ public class Spillet extends Activity {
         setContentView(R.layout.startspillet);
         getActionBar().setDisplayHomeAsUpEnabled(true);
 
+
+        if(savedInstanceState != null) {
+            vunnet = savedInstanceState.getInt("vunnet");
+            tapt = savedInstanceState.getInt("tapt");
+
+        }
+
         vunnetTv = (TextView)findViewById(R.id.vunnet);
         vunnetTv.setText("Du har vunnet: " + vunnet);
         taptTv = (TextView)findViewById(R.id.tapt);
-        taptTv.setText("Du har tapt: "+ tapt);
+        taptTv.setText("Du har tapt: " + tapt);
 
 
         Resources res = getResources();
@@ -220,7 +227,7 @@ public class Spillet extends Activity {
                     public void onClick(DialogInterface dialog, int id) {
                         Spillet.this.playGame();
                         restart();
-
+                        vunnetTv.setText("Du har vunnet: "+ ++vunnet);
                     }
 
                 });
@@ -246,6 +253,7 @@ public class Spillet extends Activity {
                 public void onClick(DialogInterface dialog, int id) {
                     Spillet.this.playGame();
                     restart();
+                    taptTv.setText("Du har tapt: " + ++tapt);
                 }
             });
             taptBuild.setNegativeButton("Avslutte", new DialogInterface.OnClickListener() {
@@ -253,16 +261,21 @@ public class Spillet extends Activity {
                     Spillet.this.finish();
                 }
             });
-            ++tapt;
             taptBuild.show();
 
         }
     }
 
     public void restart() {
-        Intent intent = getIntent();
+        Intent intent = new Intent(getApplicationContext(),Spillet.class);//getIntent();
         finish();
         intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
         startActivity(intent);
+    }
+
+    public void savedInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putInt("tapt", tapt);
+        savedInstanceState.putInt("vunnet", vunnet);
     }
 }

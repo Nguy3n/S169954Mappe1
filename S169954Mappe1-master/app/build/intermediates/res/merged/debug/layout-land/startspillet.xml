@@ -2,204 +2,362 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="3dp"
-    android:layout_marginBottom="3dp"
-    android:layout_marginLeft="8dp"
-    android:layout_marginRight="8dp"
     android:orientation="vertical"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
     android:layout_gravity="bottom"
     tools:context=".MainActivity">
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/vunnet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingRight="20dp"/>
+
+        <TextView
+            android:id="@+id/tapt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingRight="20dp"/>
+
+
+        <TextView
+            android:id="@+id/gjettet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+    <!-- Hangman bilde -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
         android:layout_gravity="center"
-        android:text="@string/tittel"/>
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:id="@+id/galgen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/galgen"
+            android:background="@color/white"
+            android:src="@drawable/galgen"/>
+
+        <ImageView
+            android:id="@+id/hode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/hode"
+            android:src="@drawable/hode"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/kroppen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/kroppen"
+            android:src="@drawable/kroppen"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/arm1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/arm1"
+            android:src="@drawable/arm1"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/arm2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/arm2"
+            android:src="@drawable/arm2"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/bein1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/bein1"
+            android:src="@drawable/bein1"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/bein2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/bein2"
+            android:src="@drawable/bein2"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <!-- Her står ordet man skal gjette på -->
+    <LinearLayout
+        android:id="@+id/ordet"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="3dp"
+        android:background="@color/black"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
 
     <!--<ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:src="@drawable/image_land"/>-->
+        android:src="@drawable/image"/>-->
 
     <TableRow
-        android:layout_width="wrap_content"
+        android:id="@+id/bokstaver1"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
         android:layout_weight="1"
+        android:layout_gravity="bottom"
+        android:background="@color/black"
         android:orientation="horizontal">
 
+        <Button
+            android:id="@+id/knappQ"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:text="Q"
+            android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="52dp"
-            android:layout_height="37dp"
-            android:text="Q"/>
+            android:id="@+id/knappW"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:text="W"
+            android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="52dp"
-            android:layout_height="37dp"
-            android:text="W"/>
+            android:id="@+id/knappE"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:text="E"
+            android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="52dp"
-            android:layout_height="37dp"
-            android:text="E"/>
+            android:id="@+id/knappR"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:text="R"
+            android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="52dp"
-            android:layout_height="37dp"
-            android:text="R"/>
+            android:id="@+id/knappT"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:text="T"
+            android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="52dp"
-            android:layout_height="37dp"
-            android:text="T"/>
+            android:id="@+id/knappY"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:text="Y"
+            android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="52dp"
-            android:layout_height="37dp"
-            android:text="Y"/>
+            android:id="@+id/knappU"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:text="U"
+            android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="52dp"
-            android:layout_height="37dp"
-            android:text="U"/>
+            android:id="@+id/knappI"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:text="I"
+            android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="52dp"
-            android:layout_height="37dp"
-            android:text="I"/>
+            android:id="@+id/knappO"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:text="O"
+            android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="52dp"
-            android:layout_height="37dp"
-            android:text="O"/>
-
-        <Button
-            android:layout_width="52dp"
-            android:layout_height="37dp"
-            android:text="P"/>
-
-        <Button
-            android:layout_width="52dp"
-            android:layout_height="37dp"
-            android:text="Å"/>
-
+            android:id="@+id/knappP"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:text="P"
+            android:onClick="bokstavTrykket"/>
     </TableRow>
 
     <TableRow
-        android:layout_width="wrap_content"
+        android:id="@+id/bokstaver2"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
         android:layout_weight="1"
+        android:layout_gravity="bottom"
+        android:background="@color/black"
         android:orientation="horizontal">
 
         <Button
-            android:layout_width="52dp"
-            android:layout_height="37dp"
-            android:text="A"/>
+            android:id="@+id/knappA"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="52dp"
-            android:layout_height="37dp"
-            android:text="S"/>
+            android:id="@+id/knappS"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:text="S"
+            android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="52dp"
-            android:layout_height="37dp"
-            android:text="D"/>
+            android:id="@+id/knappD"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:text="D"
+            android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="52dp"
-            android:layout_height="37dp"
-            android:text="F"/>
+            android:id="@+id/knappF"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:text="F"
+            android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="52dp"
-            android:layout_height="37dp"
-            android:text="G"/>
+            android:id="@+id/knappG"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:text="G"
+            android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="52dp"
-            android:layout_height="37dp"
-            android:text="H"/>
+            android:id="@+id/knappH"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="52dp"
-            android:layout_height="37dp"
-            android:text="J"/>
+            android:id="@+id/knappJ"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:text="J"
+            android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="52dp"
-            android:layout_height="37dp"
-            android:text="K"/>
+            android:id="@+id/knappK"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:text="K"
+            android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="52dp"
-            android:layout_height="37dp"
-            android:text="L"/>
-
+            android:id="@+id/knappL"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:text="L"
+            android:onClick="bokstavTrykket"/>
         <Button
-            android:layout_width="52dp"
-            android:layout_height="37dp"
-            android:text="Ø"/>
-
-        <Button
-            android:layout_width="52dp"
-            android:layout_height="37dp"
-            android:text="Æ"/>
-
+            android:id="@+id/knappAE"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:text="Æ"
+            android:onClick="bokstavTrykket"/>
     </TableRow>
 
     <TableRow
-        android:layout_width="wrap_content"
+        android:id="@+id/bokstaver3"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
         android:layout_weight="1"
+        android:layout_gravity="bottom"
+        android:background="@color/black"
         android:orientation="horizontal">
 
         <Button
-            android:layout_width="52dp"
-            android:layout_height="37dp"
+            android:id="@+id/knappZ"
+            android:layout_width="34dp"
+            android:layout_height="wrap_content"
+            android:text="Z"
             android:layout_weight="1"
-            android:text="Z"/>
+            android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="52dp"
-            android:layout_height="37dp"
+            android:id="@+id/knappX"
+            android:layout_width="33dp"
+            android:layout_height="wrap_content"
+            android:text="X"
             android:layout_weight="1"
-            android:text="X"/>
+            android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="52dp"
-            android:layout_height="37dp"
+            android:id="@+id/knappC"
+            android:layout_width="33dp"
+            android:layout_height="wrap_content"
+            android:text="C"
             android:layout_weight="1"
-            android:text="C"/>
+            android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="52dp"
-            android:layout_height="37dp"
+            android:id="@+id/knappV"
+            android:layout_width="33dp"
+            android:layout_height="wrap_content"
+            android:text="V"
             android:layout_weight="1"
-            android:text="V"/>
+            android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="52dp"
-            android:layout_height="37dp"
+            android:id="@+id/knappB"
+            android:layout_width="33dp"
+            android:layout_height="wrap_content"
+            android:text="B"
             android:layout_weight="1"
-            android:text="B"/>
+            android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="52dp"
-            android:layout_height="37dp"
+            android:id="@+id/knappN"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:text="N"
             android:layout_weight="1"
-            android:text="N"/>
+            android:onClick="bokstavTrykket"/>
 
         <Button
-            android:layout_width="52dp"
-            android:layout_height="37dp"
+            android:id="@+id/knappM"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:text="M"
             android:layout_weight="1"
-            android:text="M"/>
-
+            android:onClick="bokstavTrykket"/>
+        <Button
+            android:id="@+id/knappOE"
+            android:layout_width="34dp"
+            android:layout_height="wrap_content"
+            android:text="Ø"
+            android:layout_weight="1"
+            android:onClick="bokstavTrykket"/>
+        <Button
+            android:id="@+id/knappAA"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:text="Å"
+            android:layout_weight="1"
+            android:onClick="bokstavTrykket"/>
     </TableRow>
 </LinearLayout>
 <!-- From: file:/Users/toeffen/Documents/H2015/Apputvikling/checkout/S169954Mappe1/S169954Mappe1-master/app/src/main/res/layout-land/startspillet.xml -->
